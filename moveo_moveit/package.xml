@@ -38,13 +38,7 @@
   <depend>geometric_shapes</depend>
   <depend>moveit_visual_tools</depend>
 
-  <exec_depend>pluginlib</exec_depend>
-  <exec_depend>moveit_core</exec_depend>
-  <exec_depend>moveit_fake_controller_manager</exec_depend>
-  <exec_depend>moveit_ros_planning_interface</exec_depend>
-  <exec_depend>moveit_ros_perception</exec_depend>
-  <exec_depend>interactive_markers</exec_depend>
-  <exec_depend>moveit_visual_tools</exec_depend>
+  
 
 
 <!--  <depend>roscpp</depend>
