@@ -1,4 +1,4 @@
-<package>
+<package format = "2">
   <name>moveo_urdf</name>
   <version>1.0.0</version>
   <description>
@@ -10,11 +10,11 @@ for moveo_urdf robot</p>
   <maintainer email="jesse.weisberg@gmail.com" />
   <license>BSD</license>
   <buildtool_depend>catkin</buildtool_depend>
-  <build_depend>roslaunch</build_depend>
-  <run_depend>robot_state_publisher</run_depend>
-  <run_depend>rviz</run_depend>
-  <run_depend>joint_state_publisher</run_depend>
-  <run_depend>gazebo</run_depend>
+  <depend>roslaunch</depend>
+  <exec_depend>robot_state_publisher</exec_depend>
+  <exec_depend>rviz</exec_depend>
+  <exec_depend>joint_state_publisher</exec_depend>
+  <exec_depend>gazebo</exec_depend>
   <export>
     <architecture_independent />
   </export>
