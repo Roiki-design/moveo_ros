@@ -6,7 +6,7 @@
     name="base_link">
     <visual>
       <origin
-        xyz="0 0 .13"
+        xyz="0 0 0"
         rpy="0 0 0" />
       <geometry>
         <mesh
@@ -20,7 +20,7 @@
     </visual>
     <collision>
       <origin
-        xyz="0 0 .13"
+        xyz="0 0 0"
         rpy="0 0 0" />
       <geometry>
         <mesh
@@ -28,6 +28,41 @@
       </geometry>
     </collision>
   </link>
+
+  <!-- dummy link -->
+  <link
+    name="odom">
+    <inertial>
+      <origin
+        xyz="0.034155 -0.20591 -0.049641"
+        rpy="0 0 0" />
+      <mass
+        value="8.0643" />
+      <inertia
+        ixx="0.11291"
+        ixy="0.00066071"
+        ixz="-0.00030472"
+        iyy="0.089946"
+        iyz="0.011461"
+        izz="0.19187" />
+    </inertial>
+   </link>
+
+  <joint
+    name="odom_joint"
+    type="fixed">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="odom" />
+  </joint>
+
+
+
+
 
   <link
     name="Link_1">
@@ -73,7 +108,7 @@
     name="Joint_1"
     type="revolute">
     <origin
-      xyz="0 -0.2425 .13"
+      xyz="0 -0.2425 0"
       rpy="1.5708 9.5417E-17 2.7766" />
     <parent
       link="base_link" />
@@ -434,6 +469,7 @@
       upper="1.3"
       effort="5"
       velocity="1" />
+    <mimic joint="Gripper_Servo_Gear_Joint" multiplier="1" offset="0"/> 
   </joint>
   <link
     name="Gripper_Idol_Gear">
@@ -550,6 +586,7 @@
       upper="0"
       effort="5"
       velocity="1" />
+    <mimic joint="Gripper_Idol_Gear_Joint" multiplier="-1" offset="0"/>
   </joint>
   <link
     name="Pivot_Arm_Gripper_Servo">
@@ -608,7 +645,7 @@
       upper="1.5707"
       effort="5"
       velocity="1" />
-   
+    <mimic joint="Gripper_Servo_Gear_Joint" multiplier="1" offset="0"/> 
   </joint>
   <link
     name="Pivot_Arm_Gripper_Idol">
@@ -667,7 +704,36 @@
       upper="1.5707"
       effort="5"
       velocity="1" />
+    <mimic joint="Gripper_Idol_Gear_Joint" multiplier="1" offset="0"/> 
   </joint>
+  <!--
+  <gazebo>
+    <plugin name="MimicJointPlugin" filename="libroboticsgroup_gazebo_mimic_joint_plugin.so">
+      joint="Gripper_Idol_Gear_Joint"
+      mimicJoint="Pivot_Arm_Gripper_Idol_Joint"
+      multiplier="1"
+      offset="0"
+    </plugin>
+    <plugin name="MimicJointPlugin" filename="libroboticsgroup_gazebo_mimic_joint_plugin.so">
+      joint="Gripper_Servo_Gear_Joint"
+      mimicJoint="Pivot_Arm_Gripper_Servo_Joint"
+      multiplier="1"
+      offset="0"
+    </plugin>
+    <plugin name="MimicJointPlugin" filename="libroboticsgroup_gazebo_mimic_joint_plugin.so">
+      joint="Gripper_Servo_Gear_Joint"
+      mimicJoint="Tip_Gripper_Servo_Joint
+      multiplier="1"
+      offset="0"
+    </plugin>
+    <plugin name="MimicJointPlugin" filename="libroboticsgroup_gazebo_mimic_joint_plugin.so">
+      joint="Gripper_Idol_Gear_Joint"
+      mimicJoint="Tip_Gripper_Idol_Joint
+      multiplier="-1"
+      offset="0"
+    </plugin>
+  </gazebo>
+  -->
 </robot>
 
 
