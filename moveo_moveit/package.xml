@@ -38,8 +38,6 @@
   <depend>geometric_shapes</depend>
   <depend>moveit_visual_tools</depend>
 
-  
-
 
 <!--  <depend>roscpp</depend>
   <depend>rospy</depend>
