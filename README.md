@@ -1,3 +1,15 @@
+A Redo of the original moveo_ros package for ROS melodic and 6DOF moveo robot. Very much a work in progress.
+
+Thingiverse to the robot: https://www.thingiverse.com/thing:2146252
+
+
+
+
+
+
+
+#############################################################################################################################
+
 # moveo_ros
 ROS packages that can be used to plan and execute motion trajectories for the BCN3D Moveo robotic arm in simulation and real-life.
 ### [Video Demo Here!](https://youtu.be/2RcTTqs17O8)
