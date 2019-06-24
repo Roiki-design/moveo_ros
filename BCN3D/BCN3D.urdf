@@ -1,0 +1,299 @@
+<?xml version="1.0" ?>
+<robot name="BCN3D">
+<link name="base_link">
+  <inertial>
+    <origin rpy="0 0 0" xyz="6e-06 0.06359 0.033386"/>
+    <mass value="10.579237"/>
+    <inertia ixx="0.057522" ixy="2e-06" ixz="-0.020179" iyy="0.020301" iyz="0.022456" izz="0.071015"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+    <geometry>
+      <mesh filename="package://fusion2urdf/BCN3D/bin_stl/base_link_m-binary.stl"/>
+    </geometry>
+    <material name="silver">
+      <color rgba="1 0 0 1"/>
+    </material>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+    <geometry>
+      <mesh filename="package://fusion2urdf/BCN3D/bin_stl/base_link_m-binary.stl"/>
+    </geometry>
+  </collision>
+</link>
+<link name="moveo_5_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-6.299999999999882e-05 0.010748 0.05061800000000005"/>
+    <mass value="2.051396"/>
+    <inertia ixx="0.003968" ixy="-1.2e-05" ixz="-0.063968" iyy="0.004584" iyz="0.0636" izz="0.002321"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0.00825 -0.030356 -0.576699"/>
+    <geometry>
+      <mesh filename="package://fusion2urdf/BCN3D/bin_stl/moveo_5_1_m-binary.stl"/>
+    </geometry>
+    <material name="silver">
+      <color rgba="1 0 0 1"/>
+    </material>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0.00825 -0.030356 -0.576699"/>
+    <geometry>
+      <mesh filename="package://fusion2urdf/BCN3D/bin_stl/moveo_5_1_m-binary.stl"/>
+    </geometry>
+  </collision>
+</link>
+<link name="moveo_3_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="0.048126 0.002051 0.075958"/>
+    <mass value="14.019629"/>
+    <inertia ixx="0.122208" ixy="-6e-06" ixz="-0.062655" iyy="0.127351" iyz="0.059906" izz="0.026849"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0.06 0.0 -0.2305"/>
+    <geometry>
+      <mesh filename="package://fusion2urdf/BCN3D/bin_stl/moveo_3_1_m-binary.stl"/>
+    </geometry>
+    <material name="silver">
+      <color rgba="1 0 0 1"/>
+    </material>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0.06 0.0 -0.2305"/>
+    <geometry>
+      <mesh filename="package://fusion2urdf/BCN3D/bin_stl/moveo_3_1_m-binary.stl"/>
+    </geometry>
+  </collision>
+</link>
+<link name="moveo_4_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-0.037108 0.007164 0.037302"/>
+    <mass value="5.138963"/>
+    <inertia ixx="0.015372" ixy="1.4e-05" ixz="-0.05662" iyy="0.014687" iyz="0.054836" izz="0.005531"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.0285 -0.006028 -0.451542"/>
+    <geometry>
+      <mesh filename="package://fusion2urdf/BCN3D/bin_stl/moveo_4_1_m-binary.stl"/>
+    </geometry>
+    <material name="silver">
+      <color rgba="1 0 0 1"/>
+    </material>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.0285 -0.006028 -0.451542"/>
+    <geometry>
+      <mesh filename="package://fusion2urdf/BCN3D/bin_stl/moveo_4_1_m-binary.stl"/>
+    </geometry>
+  </collision>
+</link>
+<link name="moveo_7_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="1.4999999999999389e-05 0.0012170000000000028 0.00992599999999999"/>
+    <mass value="0.332399"/>
+    <inertia ixx="7.2e-05" ixy="-1e-06" ixz="-0.016041" iyy="6.6e-05" iyz="0.016047" izz="0.000115"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0.009163 -0.055274 -0.725542"/>
+    <geometry>
+      <mesh filename="package://fusion2urdf/BCN3D/bin_stl/moveo_7_1_m-binary.stl"/>
+    </geometry>
+    <material name="silver">
+      <color rgba="1 0 0 1"/>
+    </material>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0.009163 -0.055274 -0.725542"/>
+    <geometry>
+      <mesh filename="package://fusion2urdf/BCN3D/bin_stl/moveo_7_1_m-binary.stl"/>
+    </geometry>
+  </collision>
+</link>
+<link name="moveo_1_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="0.0 0.000445 0.012813999999999992"/>
+    <mass value="2.573085"/>
+    <inertia ixx="0.005027" ixy="0.0" ixz="-9.2e-05" iyy="0.004995" iyz="8.9e-05" izz="0.009739"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.0 0.0 -0.065"/>
+    <geometry>
+      <mesh filename="package://fusion2urdf/BCN3D/bin_stl/moveo_1_1_m-binary.stl"/>
+    </geometry>
+    <material name="silver">
+      <color rgba="1 0 0 1"/>
+    </material>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.0 0.0 -0.065"/>
+    <geometry>
+      <mesh filename="package://fusion2urdf/BCN3D/bin_stl/moveo_1_1_m-binary.stl"/>
+    </geometry>
+  </collision>
+</link>
+<link name="moveo_2_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-0.0 1.6e-05 0.075709"/>
+    <mass value="9.981201"/>
+    <inertia ixx="0.048775" ixy="-0.0" ixz="-2.4e-05" iyy="0.060882" iyz="2.7e-05" izz="0.039779"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.0 0.0 -0.0905"/>
+    <geometry>
+      <mesh filename="package://fusion2urdf/BCN3D/bin_stl/moveo_2_1_m-binary.stl"/>
+    </geometry>
+    <material name="silver">
+      <color rgba="1 0 0 1"/>
+    </material>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.0 0.0 -0.0905"/>
+    <geometry>
+      <mesh filename="package://fusion2urdf/BCN3D/bin_stl/moveo_2_1_m-binary.stl"/>
+    </geometry>
+  </collision>
+</link>
+<link name="moveo_6_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="0.023694000000000003 0.0018869999999999998 0.011109000000000036"/>
+    <mass value="1.487313"/>
+    <inertia ixx="0.001296" ixy="3e-06" ixz="-0.060216" iyy="0.001152" iyz="0.060157" izz="0.000681"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0.033244 -0.047941 -0.670059"/>
+    <geometry>
+      <mesh filename="package://fusion2urdf/BCN3D/bin_stl/moveo_6_1_m-binary.stl"/>
+    </geometry>
+    <material name="silver">
+      <color rgba="1 0 0 1"/>
+    </material>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0.033244 -0.047941 -0.670059"/>
+    <geometry>
+      <mesh filename="package://fusion2urdf/BCN3D/bin_stl/moveo_6_1_m-binary.stl"/>
+    </geometry>
+  </collision>
+</link>
+<joint name="Rev5" type="revolute">
+  <origin rpy="0 0 0" xyz="-0.03675 0.024328 0.125157"/>
+  <parent link="moveo_4_1"/>
+  <child link="moveo_5_1"/>
+  <axis xyz="0.0 0.001908 0.009816"/>
+  <limit effort="100" lower="0.0" upper="6.283185" velocity="100"/>
+</joint>
+<transmission name="Rev5_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="Rev5">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="Rev5_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+<joint name="Rev3" type="revolute">
+  <origin rpy="0 0 0" xyz="-0.06 0.0 0.14"/>
+  <parent link="moveo_2_1"/>
+  <child link="moveo_3_1"/>
+  <axis xyz="-0.01 0.0 -0.0"/>
+  <limit effort="100" lower="-1.919862" upper="1.832596" velocity="100"/>
+</joint>
+<transmission name="Rev3_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="Rev3">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="Rev3_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+<joint name="rev4" type="revolute">
+  <origin rpy="0 0 0" xyz="0.0885 0.006028 0.221042"/>
+  <parent link="moveo_3_1"/>
+  <child link="moveo_4_1"/>
+  <axis xyz="0.01 -0.0 0.0"/>
+  <limit effort="100" lower="-2.443461" upper="2.181662" velocity="100"/>
+</joint>
+<transmission name="rev4_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="rev4">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="rev4_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+<joint name="Rev7" type="revolute">
+  <origin rpy="0 0 0" xyz="0.024081 0.007333 0.055483"/>
+  <parent link="moveo_6_1"/>
+  <child link="moveo_7_1"/>
+  <axis xyz="1.5e-05 0.001217 0.009926"/>
+  <limit effort="100" lower="-5.148721" upper="0.959931" velocity="100"/>
+</joint>
+<transmission name="Rev7_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="Rev7">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="Rev7_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+<joint name="Rev1" type="revolute">
+  <origin rpy="0 0 0" xyz="0.0 0.0 0.065"/>
+  <parent link="base_link"/>
+  <child link="moveo_1_1"/>
+  <axis xyz="-0.0 0.0 0.01"/>
+  <limit effort="100" lower="-3.141593" upper="3.141593" velocity="100"/>
+</joint>
+<transmission name="Rev1_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="Rev1">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="Rev1_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+<joint name="Rigid13" type="fixed">
+  <origin rpy="0 0 0" xyz="0.0 0.0 0.0255"/>
+  <parent link="moveo_1_1"/>
+  <child link="moveo_2_1"/>
+</joint>
+<transmission name="Rigid13_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="Rigid13">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="Rigid13_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+<joint name="Rev6" type="revolute">
+  <origin rpy="0 0 0" xyz="-0.024994 0.017585 0.09336"/>
+  <parent link="moveo_5_1"/>
+  <child link="moveo_6_1"/>
+  <axis xyz="-0.009998 -0.000217 4.2e-05"/>
+  <limit effort="100" lower="-1.832596" upper="2.007129" velocity="100"/>
+</joint>
+<transmission name="Rev6_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="Rev6">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="Rev6_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+<gazebo>
+  <plugin filename="libgazebo_ros_control.so" name="control"/>
+</gazebo>
+</robot>
