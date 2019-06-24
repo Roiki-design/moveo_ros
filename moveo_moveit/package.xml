@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<package format="2">
+<package format = "2">
   <name>moveo_moveit</name>
   <version>0.3.0</version>
   <description>The Moveo_moveit package</description>
@@ -17,16 +17,36 @@
   <!-- Authors do not have to be maintainers, but could be -->
   <!-- Example: -->
   <buildtool_depend>catkin</buildtool_depend>
-  <depend>moveit_core</depend>
-
+  
   <depend>message_generation</depend>
   <depend>pluginlib</depend>
   <depend>eigen</depend>
+  <depend>moveit_core</depend>
   <depend>moveit_ros_planning_interface</depend>
   <depend>moveit_ros_perception</depend>
   <depend>interactive_markers</depend>
   <depend>geometric_shapes</depend>
   <depend>moveit_visual_tools</depend>
+
+
+<!--  <depend>roscpp</depend>
+  <depend>rospy</depend>
+  <depend>sensor_msgs</depend>
+  <depend>std_msgs</depend>
+  <depend>moveit_ros_planning_interface</depend>
+  <depend>moveit_core</depend>
+
+  <exec_depend>message_generation</exec_depend>
+  <exec_depend>message_runtime</exec_depend>
+  <exec_depend>roscpp</exec_depend>
+  <exec_depend>rospy</exec_depend>
+  <exec_depend>sensor_msgs</exec_depend>
+  <exec_depend>std_msgs</exec_depend>
+  <exec_depend>moveit_core</exec_depend>
+  <exec_depend>moveit_ros_planning_interface</exec_depend>
+  <exec_depend>interactive_markers</exec_depend>
+-->
+
 
 
   <!-- The export tag contains other, unspecified, tags -->
