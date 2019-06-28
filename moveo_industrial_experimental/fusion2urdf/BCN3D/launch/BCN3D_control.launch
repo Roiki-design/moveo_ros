@@ -1,0 +1,7 @@
+<launch>
+  <rosparam command="load" file="$(find fusion2urdf)/launch/BCN3D_controller.yaml"/>
+  <node args="Rev5_position_controller Rev3_position_controller rev4_position_controller Rev7_position_controller Rev1_position_controller Rigid13_position_controller Rev6_position_controller joint_state_controller" name="controller_spawner" ns="BCN3D" output="screen" pkg="controller_manager" respawn="false" type="spawner"/>
+  <node name="robot_state_publisher" output="screen" pkg="robot_state_publisher" respawn="false" type="robot_state_publisher">
+    <remap from="/joint_states" to="/BCN3D/joint_states"/>
+  </node>
+</launch>
