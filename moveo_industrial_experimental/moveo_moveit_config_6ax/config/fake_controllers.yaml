@@ -1,0 +1,9 @@
+controller_list:
+  - name: fake_arm_controller
+    joints:
+      - Rev1
+      - Rev3
+      - rev4
+      - Rev5
+      - Rev6
+      - Rev7
