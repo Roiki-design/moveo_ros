@@ -3,7 +3,7 @@
   <name>moveo_moveit_config_6ax</name>
   <version>0.3.0</version>
   <description>
-     An automatically generated package with all the configuration and launch files for using the BCN3D with the MoveIt! Motion Planning Framework
+     An automatically generated package with all the configuration and launch files for using the moveo6 with the MoveIt! Motion Planning Framework
   </description>
   <author email="Joonas.forsell@gmail.com">Joonas Forsell</author>
   <maintainer email="Joonas.forsell@gmail.com">Joonas Forsell</maintainer>
@@ -28,8 +28,8 @@
   <run_depend>xacro</run_depend>
   <!-- This package is referenced in the warehouse launch files, but does not build out of the box at the moment. Commented the dependency until this works. -->
   <!-- <run_depend>warehouse_ros_mongo</run_depend> -->
-  <build_depend>fusion2urdf</build_depend>
-  <run_depend>fusion2urdf</run_depend>
+  <build_depend>moveo6_meshes</build_depend>
+  <run_depend>moveo6_meshes</run_depend>
 
 
 </package>

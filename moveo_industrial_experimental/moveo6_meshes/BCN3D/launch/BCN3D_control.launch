@@ -1,0 +1,7 @@
+<launch>
+  <rosparam command="load" file="$(find moveo6_meshes)/launch/moveo6_controller.yaml"/>
+  <node args="Rev5_position_controller Rev3_position_controller rev4_position_controller Rev7_position_controller Rev1_position_controller Rigid13_position_controller Rev6_position_controller joint_state_controller" name="controller_spawner" ns="moveo6" output="screen" pkg="controller_manager" respawn="false" type="spawner"/>
+  <node name="robot_state_publisher" output="screen" pkg="robot_state_publisher" respawn="false" type="robot_state_publisher">
+    <remap from="/joint_states" to="/moveo6/joint_states"/>
+  </node>
+</launch>

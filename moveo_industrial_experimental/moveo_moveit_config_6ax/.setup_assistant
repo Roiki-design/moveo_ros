@@ -1,7 +1,7 @@
 moveit_setup_assistant_config:
   URDF:
-    package: fusion2urdf
-    relative_path: BCN3D/BCN3D.urdf
+    package: moveo6_meshes
+    relative_path: moveo6/moveo6.urdf
     xacro_args: ""
   SRDF:
     relative_path: config/moveo_urdf.srdf
