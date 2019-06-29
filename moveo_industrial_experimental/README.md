@@ -1,0 +1,1 @@
+The intention of this work is to try and build a robot control system using faily simple components and serial communication. Very much work in progress
